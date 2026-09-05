@@ -107,7 +107,7 @@ function setupCarousel() {
   const slides = Array.from(document.querySelectorAll('.hero-bg .hero-slide'));
   if (!slides.length) return;
   let idx = 0;
-  const delay = 5000;
+  const delay = 2000;
 
   function next() {
     slides[idx].classList.remove('active');
