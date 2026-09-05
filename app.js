@@ -102,6 +102,29 @@ function setupCarousel() {
   next.addEventListener("click", () => scrollByPage(1));
 }
 
+// hero background carousel (cycles images, pause on hover)
+(function heroCarousel() {
+  const slides = Array.from(document.querySelectorAll('.hero-bg .hero-slide'));
+  if (!slides.length) return;
+  let idx = 0;
+  const delay = 5000;
+
+  function next() {
+    slides[idx].classList.remove('active');
+    idx = (idx + 1) % slides.length;
+    slides[idx].classList.add('active');
+  }
+
+  let timer = setInterval(next, delay);
+
+  const hero = document.querySelector('.hero');
+  hero?.addEventListener('mouseenter', () => clearInterval(timer));
+  hero?.addEventListener('mouseleave', () => {
+    clearInterval(timer);
+    timer = setInterval(next, delay);
+  });
+})();
+
 function setupMenu() {
   const button = document.querySelector(".menu-button");
   const nav = document.querySelector(".site-nav");
