@@ -249,17 +249,21 @@ a {
 
 .button-primary {
   color: #ffffff;
-  background: var(--red);
+  /* background: var(--red);*/
   box-shadow: 0 12px 30px rgba(217, 37, 54, 0.32);
+  border-color: rgba(255, 255, 255, 0.34);
+
 }
 
 .button-secondary {
   color: #ffffff;
-  background: linear-gradient(45deg,
+  /* background: linear-gradient(45deg,
       #833AB4,
       #FD1D1D,
-      #FCAF45);
+      #FCAF45);*/
   border-color: rgba(255, 255, 255, 0.34);
+  box-shadow: 0 12px 30px rgba(217, 37, 54, 0.32);
+
 }
 
 .hero-stats {
