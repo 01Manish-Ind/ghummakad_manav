@@ -53,7 +53,7 @@ const popularVideos = [
 
 const jyotirlinga = [
   {
-    id: "7W9AHp6exdY",
+    id: "WaeEwvtgoAI",
     title: "12 Jyotirlinga + 11,000 KM SOLO ROAD TRIP | Meri Sabse Badi Yatra Ki Preparation",
     views: "1.2k views"
   }
