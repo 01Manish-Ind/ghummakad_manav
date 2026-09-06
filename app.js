@@ -51,6 +51,14 @@ const popularVideos = [
   }
 ];
 
+const jyotirlinga = [
+  {
+    id: "7W9AHp6exdY",
+    title: "12 Jyotirlinga + 11,000 KM SOLO ROAD TRIP | Meri Sabse Badi Yatra Ki Preparation",
+    views: "1.2k views"
+  }
+];
+
 function renderVideos() {
   const track = document.querySelector("#videoTrack");
   if (!track) return;
@@ -77,6 +85,34 @@ function renderVideos() {
     })
     .join("");
 }
+
+function renderJyotirlingaVideos() {
+  const track = document.querySelector("#JyotirlingaVideoTrack");
+  if (!track) return;
+
+  track.innerHTML = jyotirlinga
+    .map((video) => {
+      const url = `https://www.youtube.com/watch?v=${video.id}`;
+      const thumbnail = `https://i.ytimg.com/vi/${video.id}/hqdefault.jpg`;
+
+      return `
+        <article class="video-card">
+          <a href="${url}" target="_blank" rel="noreferrer" aria-label="Watch ${escapeHtml(video.title)} on YouTube">
+            <div class="video-thumb">
+              <img src="${thumbnail}" alt="${escapeHtml(video.title)} thumbnail" loading="lazy">
+              <span class="play-badge" aria-hidden="true"><i data-lucide="play"></i></span>
+            </div>
+            <div class="video-meta">
+              <h3>${escapeHtml(video.title)}</h3>
+              <p>${escapeHtml(video.views)}</p>
+            </div>
+          </a>
+        </article>
+      `;
+    })
+    .join("");
+}
+
 
 function escapeHtml(value) {
   return String(value)
@@ -151,6 +187,7 @@ function setupMenu() {
 
 window.addEventListener("DOMContentLoaded", () => {
   renderVideos();
+  renderJyotirlingaVideos();
   setupCarousel();
   setupMenu();
   if (window.lucide) window.lucide.createIcons();
