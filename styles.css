@@ -401,7 +401,7 @@ a {
 
 .route-list li {
   counter-increment: route;
-  /*display: grid;*/
+  display: grid;
   grid-template-columns: 40px 1fr;
   gap: 0.8rem;
   align-items: center;
@@ -659,6 +659,245 @@ blockquote {
   text-decoration: none;
 }
 
+.route-list a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.route-list a:hover span,
+.route-list a:focus-visible span {
+  color: var(--red);
+}
+
+/* Jyotirlinga directory and individual guide pages */
+.directory-hero {
+  padding: 5.5rem 5vw;
+  color: #ffffff;
+  background: linear-gradient(115deg, rgba(15, 118, 110, 0.94), rgba(23, 35, 56, 0.97)), url("assets/destination-map.jpeg") center / cover;
+}
+
+.directory-hero h1,
+.temple-hero h1 {
+  max-width: 780px;
+  margin: 0;
+  font-size: clamp(2.55rem, 6vw, 4.8rem);
+  line-height: 1;
+}
+
+.directory-hero > .section-inner > p:last-child {
+  max-width: 740px;
+  margin: 1.2rem 0 0;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 1.12rem;
+}
+
+.temple-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.temple-card {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 12px 32px rgba(21, 32, 43, 0.08);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.temple-card:hover,
+.temple-card:focus-within {
+  box-shadow: var(--shadow);
+  transform: translateY(-3px);
+}
+
+.temple-card a {
+  display: block;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+}
+
+.temple-card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: #dbe4ee;
+}
+
+.temple-card-copy {
+  padding: 1rem;
+}
+
+.temple-number {
+  color: var(--red);
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.temple-card h3 {
+  margin: 0.32rem 0 0;
+  font-size: 1.25rem;
+  line-height: 1.18;
+}
+
+.temple-card p {
+  min-height: 2.9em;
+  margin: 0.45rem 0 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.temple-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-top: 0.85rem;
+  color: var(--teal);
+  font-weight: 900;
+}
+
+.temple-card-link svg {
+  width: 17px;
+  height: 17px;
+}
+
+.temple-hero {
+  position: relative;
+  display: grid;
+  min-height: min(670px, 74svh);
+  overflow: hidden;
+  align-items: end;
+  padding: 4.5rem 5vw;
+  color: #ffffff;
+  background: #172338;
+}
+
+.temple-hero-image,
+.temple-hero-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.temple-hero-image {
+  object-fit: cover;
+}
+
+.temple-hero-overlay {
+  background: linear-gradient(90deg, rgba(15, 23, 36, 0.92) 0%, rgba(15, 23, 36, 0.65) 45%, rgba(15, 23, 36, 0.16) 100%);
+}
+
+.temple-hero-content {
+  position: relative;
+  z-index: 1;
+  width: min(1180px, 100%);
+  margin: 0 auto;
+}
+
+.temple-hero-content .eyebrow {
+  margin-left: 0;
+  color: var(--saffron);
+}
+
+.temple-hero-content > p:last-child {
+  margin: 1rem 0 0;
+  font-size: 1.15rem;
+  font-weight: 750;
+}
+
+.temple-intro-grid,
+.darshan-grid,
+.next-temple {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+  gap: 2rem;
+  align-items: start;
+}
+
+.temple-intro-grid h2,
+.darshan-card h2,
+.next-temple h2 {
+  margin: 0;
+  font-size: 2.15rem;
+  line-height: 1.1;
+}
+
+.temple-intro-grid > div > p:last-child,
+.darshan-card > p {
+  color: var(--muted);
+}
+
+.temple-facts {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.temple-facts > div {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  gap: 0.75rem;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #f8fafc;
+}
+
+.temple-facts svg,
+.darshan-card > svg {
+  color: var(--teal);
+}
+
+.temple-facts strong {
+  display: block;
+  margin-bottom: 0.12rem;
+}
+
+.darshan-card {
+  min-height: 100%;
+  padding: 1.5rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 12px 32px rgba(21, 32, 43, 0.07);
+}
+
+.darshan-card > svg {
+  width: 29px;
+  height: 29px;
+}
+
+.darshan-card .eyebrow {
+  margin: 0.9rem 0 0.6rem;
+}
+
+.notice {
+  padding: 0.75rem 0.9rem;
+  border-left: 4px solid var(--saffron);
+  background: #fff8e8;
+  color: #604604 !important;
+  font-size: 0.93rem;
+}
+
+.section-deep .next-temple {
+  align-items: center;
+}
+
+.section-deep .next-temple p:not(.eyebrow) {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.next-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.8rem;
+}
+
 
 .brand {
   display: inline-flex;
@@ -703,8 +942,19 @@ blockquote {
   }
 
   .planning-grid,
-  .qr-grid {
+  .qr-grid,
+  .temple-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .temple-intro-grid,
+  .darshan-grid,
+  .next-temple {
+    grid-template-columns: 1fr;
+  }
+
+  .next-actions {
+    justify-content: flex-start;
   }
 
   .about-profile img {
@@ -787,8 +1037,28 @@ blockquote {
   }
 
   .planning-grid,
-  .qr-grid {
+  .qr-grid,
+  .temple-grid {
     grid-template-columns: 1fr;
+  }
+
+  .directory-hero,
+  .temple-hero {
+    padding: 4rem 5vw;
+  }
+
+  .temple-hero {
+    min-height: 520px;
+  }
+
+  .temple-hero-overlay {
+    background: linear-gradient(180deg, rgba(15, 23, 36, 0.45) 0%, rgba(15, 23, 36, 0.92) 86%);
+  }
+
+  .temple-intro-grid h2,
+  .darshan-card h2,
+  .next-temple h2 {
+    font-size: 1.85rem;
   }
 
   .video-heading {

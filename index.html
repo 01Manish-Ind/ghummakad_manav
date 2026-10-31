@@ -14,6 +14,7 @@
   <meta property="og:image" content="assets/destination-map.jpeg">
   <link rel="stylesheet" href="styles.css">
   <script defer src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+  <script defer src="temple.js"></script>
   <script defer src="app.js"></script>
 </head>
 
@@ -28,6 +29,7 @@
     </button>
     <nav class="site-nav" aria-label="Primary navigation">
       <a href="#journey">Journey</a>
+      <a href="#jyotirlingas">All 12</a>
       <a href="#route">Route</a>
       <a href="#videos">Videos</a>
       <a href="#about">About</a>
@@ -139,20 +141,32 @@
           </figure>
 
           <ol class="route-list" aria-label="Suggested road trip order">
-            <li><span>Mahakaleshwar</span><small>Ujjain, Madhya Pradesh - plan early for Bhasma Aarti</small></li>
-            <li><span>Omkareshwar</span><small>Madhya Pradesh - Narmada island temple town</small></li>
-            <li><span>Nageshwar</span><small>Dwarka, Gujarat - combine with Dwarkadhish and Beyt Dwarka</small></li>
-            <li><span>Somnath</span><small>Veraval, Gujarat - coast, sunset, temple light show</small></li>
-            <li><span>Trimbakeshwar</span><small>Nashik, Maharashtra - Godavari origin region</small></li>
-            <li><span>Bhimashankar</span><small>Maharashtra - Western Ghats road and trek-like terrain</small></li>
-            <li><span>Grishneshwar</span><small>Khuldabad, Maharashtra - near Ellora caves</small></li>
-            <li><span>Mallikarjuna</span><small>Srisailam, Andhra Pradesh - forest road and dam belt</small></li>
-            <li><span>Rameshwaram</span><small>Tamil Nadu - sea bridge, Dhanushkodi, Ramanathaswamy Temple</small></li>
-            <li><span>Baidyanath</span><small>Deoghar, Jharkhand - eastern India temple halt</small></li>
-            <li><span>Kashi Vishwanath</span><small>Varanasi, Uttar Pradesh - ghats, darshan, local lanes</small></li>
-            <li><span>Kedarnath</span><small>Uttarakhand - mountain drive plus trek buffer</small></li>
+            <li><a href="temples/mahakaleshwar.html"><span>Mahakaleshwar</span><small>Ujjain, Madhya Pradesh - plan early for Bhasma Aarti</small></a></li>
+            <li><a href="temples/omkareshwar.html"><span>Omkareshwar</span><small>Madhya Pradesh - Narmada island temple town</small></a></li>
+            <li><a href="temples/nageshwar.html"><span>Nageshwar</span><small>Dwarka, Gujarat - combine with Dwarkadhish and Beyt Dwarka</small></a></li>
+            <li><a href="temples/somnath.html"><span>Somnath</span><small>Veraval, Gujarat - coast, sunset, temple light show</small></a></li>
+            <li><a href="temples/trimbakeshwar.html"><span>Trimbakeshwar</span><small>Nashik, Maharashtra - Godavari origin region</small></a></li>
+            <li><a href="temples/bhimashankar.html"><span>Bhimashankar</span><small>Maharashtra - Western Ghats road and trek-like terrain</small></a></li>
+            <li><a href="temples/grishneshwar.html"><span>Grishneshwar</span><small>Khuldabad, Maharashtra - near Ellora caves</small></a></li>
+            <li><a href="temples/mallikarjuna.html"><span>Mallikarjuna</span><small>Srisailam, Andhra Pradesh - forest road and dam belt</small></a></li>
+            <li><a href="temples/rameshwaram.html"><span>Rameshwaram</span><small>Tamil Nadu - sea bridge, Dhanushkodi, Ramanathaswamy Temple</small></a></li>
+            <li><a href="temples/baidyanath.html"><span>Baidyanath</span><small>Deoghar, Jharkhand - eastern India temple halt</small></a></li>
+            <li><a href="temples/kashi-vishwanath.html"><span>Kashi Vishwanath</span><small>Varanasi, Uttar Pradesh - ghats, darshan, local lanes</small></a></li>
+            <li><a href="temples/kedarnath.html"><span>Kedarnath</span><small>Uttarakhand - mountain drive plus trek buffer</small></a></li>
           </ol>
         </div>
+      </div>
+    </section>
+
+    <section id="jyotirlingas" class="section section-bright" aria-labelledby="jyotirlingas-title">
+      <div class="section-inner">
+        <div class="section-heading">
+          <p class="eyebrow">Darshan guides</p>
+          <h2 id="jyotirlingas-title">Explore Each Jyotirlinga</h2>
+          <p>Open a guide for current darshan information, practical road notes, a temple-specific vlog image, and a direct official source link.</p>
+        </div>
+        <div id="templeGrid" class="temple-grid"></div>
+        <p><a class="text-link" href="jyotirlingas.html">Open the complete 12 Jyotirlinga guide <i data-lucide="arrow-right"></i></a></p>
       </div>
     </section>
 
@@ -212,18 +226,18 @@
     </section>
 
 
-    <section id="videos" class="section" aria-labelledby="videos-title">
+    <section id="jyotirlinga-videos" class="section" aria-labelledby="jyotirlinga-videos-title">
       <div class="section-inner">
         <div class="section-heading video-heading">
           <div>
             <p class="eyebrow"> 12 Jyotirlinga blog Popular from YouTube</p>
-            <h2 id="videos-title">Watch The 12 Jyotirlinga Vibe</h2>
+            <h2 id="jyotirlinga-videos-title">Watch The 12 Jyotirlinga Vibe</h2>
           </div>
           <div class="carousel-controls">
-            <button class="icon-button" id="prevVideo" type="button" aria-label="Previous videos">
+            <button class="icon-button" id="prevJyotirlingaVideo" type="button" aria-label="Previous Jyotirlinga videos">
               <i data-lucide="chevron-left"></i>
             </button>
-            <button class="icon-button" id="nextVideo" type="button" aria-label="Next videos">
+            <button class="icon-button" id="nextJyotirlingaVideo" type="button" aria-label="Next Jyotirlinga videos">
               <i data-lucide="chevron-right"></i>
             </button>
           </div>

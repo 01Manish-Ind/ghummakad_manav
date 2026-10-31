@@ -224,10 +224,10 @@ function escapeHtml(value) {
     .replace(/'/g, "&#039;");
 }
 
-function setupCarousel() {
-  const track = document.querySelector("#videoTrack");
-  const previous = document.querySelector("#prevVideo");
-  const next = document.querySelector("#nextVideo");
+function setupCarousel(trackSelector, previousSelector, nextSelector) {
+  const track = document.querySelector(trackSelector);
+  const previous = document.querySelector(previousSelector);
+  const next = document.querySelector(nextSelector);
   if (!track || !previous || !next) return;
 
   const scrollByPage = (direction) => {
@@ -289,7 +289,8 @@ function setupMenu() {
 window.addEventListener("DOMContentLoaded", () => {
   renderVideos();
   renderJyotirlingaVideos();
-  setupCarousel();
+  setupCarousel("#videoTrack", "#prevVideo", "#nextVideo");
+  setupCarousel("#JyotirlingaVideoTrack", "#prevJyotirlingaVideo", "#nextJyotirlingaVideo");
   setupMenu();
   if (window.lucide) window.lucide.createIcons();
 });
