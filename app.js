@@ -101,7 +101,63 @@ const jyotirlinga = [
     id: "uUo1CEYKeQU",
     title: "EP -9 | 5th Jyotirlinga Completed! 🔱🙏 | Trimbakeshwar Jyotirlinga Darshan | 11,000 KM Solo Road Trip",
     views: "794 views"
+  },
+  {
+    id: "8io8QV0Y380",
+    title: "EP -10 | Aakhir 7 Jyotirlinga Complete Ho Gaye! 😍🔱 | 12 Jyotirlinga Solo Road Trip",
+    views: "745 views"
+  },
+  {
+    id: "DBNlZPX6jGk",
+    title: "DELHI TO RAMESHWARAM | NON-STOP SOLO | EP-11 | DELHI - PUNE - RAMESHWARAM | SOUTH INDIA",
+    views: "1.8k views"
+  },
+  {
+    id: "9Li2sLeXV-U",
+    title: "EP 12 | 8th Jyotirlinga Complete! 🙏 | Rameshwaram Darshan & Dhanushkodi Road Trip",
+    views: "1k views"
+  },
+   {
+    id: "zKk8mg73W-A",
+    title: "EP-13 | Aakhir 9/12 JYOTIRLINGA COMPLETE! 🔥🙏 | MALLIKARJUNA SRISAILAM DARSHAN",
+    views: "459 views"
+  },
+  {
+    id: "g_4u-I4vHtw",
+    title: "EP-14 | ROOM NA MILNE PAR ROAD PAR SONA PADA! 😱 | 12 JYOTIRLINGA SOLO ROAD TRIP 🔱",
+    views: "1.1k views"
+  },
+  {
+    id: "Epd3HTFlMh8",
+    title: "EP-15 | HALAT KHARAB HO GAYI 😱 | AAKHIR KYUN LAG GAYE 4 DIN 3 RAAT? | 2000 KM SOLO ROAD TRIP",
+    views: "1.3k views"
+  },
+  {
+    id: "ybHt95Gmqdc",
+    title: "EP-16 | BABA BAIDYANATH DHAM JYOTIRLINGA DARSHAN 🙏 | JHARKHAND | 12 JYOTIRLINGA SOLO ROAD TRIP",
+    views: "460 views"
+  },
+  {
+    id: "e6HNpDFeeEg",
+    title: "EP-17 | KASHI VISHWANATH JYOTIRLINGA DARSHAN | BANARAS | VARANASI | 11/12 JYOTIRLINGA",
+    views: "315 views"
+  },
+  {
+    id: "EOxv26NBbj0",
+    title: "EP-18 | GANGA EXPRESSWAY 2026 🚗 | BANARAS TO DELHI IN 6 HOURS? | COMPLETE GUIDE",
+    views: "631 views"
+  },
+  {
+    id: "x_6cZzEiYCQ",
+    title: "EP-19 | Delhi to Kedarnath 2026 🚗 | The Ultimate 12 Jyotirlinga Solo Road Trip",
+    views: "539 views"
+  },
+  {
+    id: "T35tGbbkqZU",
+    title: "EP-20 | KEDARNATH DHAM YATRA 2026 🔱🙏 | VIP DARSHAN | -4°C EXTREME COLD | 12 JYOTIRLINGA",
+    views: "539 views"
   }
+  
 ];
 
 function renderVideos() {
