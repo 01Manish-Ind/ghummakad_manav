@@ -55,7 +55,52 @@ const jyotirlinga = [
   {
     id: "WaeEwvtgoAI",
     title: "12 Jyotirlinga + 11,000 KM SOLO ROAD TRIP | Meri Sabse Badi Yatra Ki Preparation",
-    views: "1.2k views"
+    views: "3.6k views"
+  },
+  {
+    id: "C5GdqzHWwY4",
+    title: "Delhi to Ujjain Non-Stop 14-Hour Solo Road Trip by Car Ep-1",
+    views: "8.9k views"
+  },
+  {
+    id: "TeznNVI1np8",
+    title: "Ep 2 | Road Accident During Ujjain Trip 😢 | Mahakaleshwar Darshan | Kal Bhairav & Omkareshwar Vlog",
+    views: "2.3k views"
+  },
+  {
+    id: "6wnD0QR7VQw",
+    title: "EP -3 | Omkareshwar to Ahmedabad | 14 Hour Non-Stop Solo Drive",
+    views: "2.5k views"
+  },
+  {
+    id: "Wp6K3HcZqsQ",
+    title: "EP -4 | Aakhir Kyu Takrayi Meri Car? 😱 | What Happened Next? | Solo Road Trip Ep. 4EP -3 | Omkareshwar to Ahmedabad | 14 Hour Non-Stop Solo Drive",
+    views: "1.1k views"
+  },
+  {
+    id: "2FP3UIKx-ew",
+    title: "EP -5 | Nageshwar Jyotirlinga Temple Tour 🛕 | Complete Darshan Guide | Solo Road Trip",
+    views: "1k views"
+  },
+  {
+    id: "_ZQwRho0Tdc",
+    title: "EP -6 | India's Longest Cable Bridge | Sudarshan Setu + Dwarkadhish Temple Darshan | Solo Road Trip",
+    views: "1.7k views"
+  },
+  {
+    id: "mWo3cl66D9s",
+    title: "Trimbakeshwar Mahadev Ke Live Darshan 🙏 | 12 Jyotirlinga Journey | Solo Road Trip",
+    views: "1k views"
+  },
+  {
+    id: "RHuQrDRrv6A",
+    title: "EP -8 |11,000 KM Solo Journey Mein Unexpected Twist! 🚢 | Car Ferry Adventure",
+    views: "646 views"
+  },
+  {
+    id: "uUo1CEYKeQU",
+    title: "EP -9 | 5th Jyotirlinga Completed! 🔱🙏 | Trimbakeshwar Jyotirlinga Darshan | 11,000 KM Solo Road Trip",
+    views: "794 views"
   }
 ];
 
